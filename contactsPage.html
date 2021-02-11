@@ -1,0 +1,59 @@
+<!--
+========== <<<<<<<>>>>>>>>> ==============
+THis Pase is fro Displying my Contacts -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact me</title>
+</head>
+
+<body>
+  <h1>Contact Me</h1>
+
+  <p>🏠 No 15, Senamale, Springvalley, Badulla(90000) <br>
+    📱 +9471 350 9576 <br>
+    📪 <a href="">shammikahs@gmail.com</a> </p>
+  <hr>
+  <h3>Send me a Message!!</h3>
+  <!--
+  Form Element
+  -------------
+  * action
+    The URI of a program that processes the information submitted via the form
+    in there we used mailto anchor.
+    mailto anchor popup the relavant mail sender
+
+  * Method
+    method attribute we set to post
+    it will get the user data and send to mailto which are collect from the input fields of the form
+
+  * enctype - encrypte encrypte type
+    this covert the data to plain text which are colllect from the post
+    --from devDocs => enctype = Defines the content type of the form data when the method is POST
+
+                                                                                                -->
+  <form action="mailto:shammikahs@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name: </label>
+    <input type="text" name="yourName" value=""> <br>
+    <label>Your Email:</label>
+    <input type="email" name="yourMail" value=""> <br>
+    <!-- in here we set input type as email. Because when we set like that it detects
+         if the user enter a valid email or not...-->
+    <label>Your Message:</label> <br>
+    <textarea name="yourMessage" rows="8" cols="20"></textarea> <br>
+    <input type="submit" name="" value="submit">
+
+  </form>
+  <hr>
+
+  <h3>👇Follow me</h3>
+  <p><a href="https://twitter.com/MGShammika">Twitter</a> <br>
+    <a href="https://www.facebook.com/profile.php?id=100009355595013">Facebook</a> <br>
+    <a href="https://www.linkedin.com/in/harsha-shammika-382b14118/">LinkedIn</a>
+  </p>
+
+</body>
+
+</html>
